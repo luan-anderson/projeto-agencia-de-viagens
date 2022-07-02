@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Icons Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    
+    <!-- Arquivo Css -->
+    <link rel="stylesheet" href="./estilo.css" type="text/css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <title>Agencia de Viagens</title>  
+</head>
+
+<body class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-dark menu">
+        <a class="navbar-brand" href="#"><img width="110px" src="./imagens/logo.png" alt="logo da empresa"></a>
+        <h3>Sunsetur</h3>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto ml-auto">
+              <li class="nav-item active mr-4">
+                <a class="nav-link" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item active mr-4">
+                <a class="nav-link" href="./destino.html">Destino</a>
+              </li>
+              <li class="nav-item active mr-4">
+                <a class="nav-link" href="./promocoes.html">Promoções</a>
+              </li>
+              <li class="nav-item active mr-4">
+                <a class="nav-link" href="./contato.html">Contato</a>
+              </li>
+            </ul>  
+          
+            <form class="form-inline">
+              <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar..." aria-label="Pesquisar">
+              <button id="botaoPesquisar" class="btn btn-outline-light my-2 my-sm-0" type="submit">Pesquisar</button>
+            </form>
+        </div>
+    </nav>
+
+    <main>
+
+      <div class="text-success text-left pt-4 pl-5">
+        <h2> Ofertas Sunsetur </h2>
+        <p>Planeje sua próxima viagem com as melhores promoções de pacote. </p>
+      </div>
+
+      <div class="card-deck">
+        <h3 class="tituloPromocoes text-white">Pacotes <br> Nacionais</h3>
+        <div class="card shadow-sm"> <a class="cardLink" href="#">
+          <img class="card-img-top" src="./imagens/noronhaCard.jpg" alt="Imagem de capa do card">
+          <div class="card-body">
+            <h5 class="card-title">Noronha - PE</h5>
+            <p class="card-text text-lg-left">9.8 <span class="estrelasCard"> &#9733; &#9733; &#9733; &#9733; &#9733; </span></p>
+            <p class="card-text">Saindo da sua cidade <br> Hotel + Aéreo</p>
+            <p class="card-text small">Oferta imbatível</p> <hr>
+            <p class="card-text small"> <s> R$ 1.890,00 </s></p>
+            <p class="card-text"> <strong> R$ 1.290,00 </strong></p>
+          </div>
+        </div></a>
+
+        <div class="card shadow-sm"> <a class="cardLink" href="#">
+          <img class="card-img-top" src="./imagens/rioCard.jpg" alt="Imagem de capa do card">
+          <div class="card-body">
+            <h5 class="card-title">Rio de Janeiro - RJ</h5>
+            <p class="card-text text-lg-left">8.5 <span class="estrelasCard"> &#9733; &#9733; &#9733; &#9733; &#9733; </span></p>
+            <p class="card-text">Saindo da sua cidade <br> Hotel + Aéreo</p>
+            <p class="card-text small">Oferta imbatível</p> <hr>
+            <p class="card-text small"> <s> R$ 1.490,00 </s></p>
+            <p class="card-text"> <strong> R$ 1.090,00 </strong></p>
+          </div>
+        </div></a>
+
+        <div class="card shadow-sm"> <a class="cardLink" href="#">
+          <img class="card-img-top" src="./imagens/maceioCard.jpg" alt="Imagem de capa do card">
+          <div class="card-body">
+            <h5 class="card-title">Maceió - AL</h5>
+            <p class="card-text text-lg-left">8.3 <span class="estrelasCard"> &#9733; &#9733; &#9733; &#9733;</span></p>
+            <p class="card-text">Saindo da sua cidade <br> Hotel + Aéreo</p>
+            <p class="card-text small">Oferta imbatível</p> <hr>
+            <p class="card-text small"> <s> R$ 1.490,00 </s></p>
+            <p class="card-text"> <strong> R$ 940,00 </strong></p>
+          </div>
+        </div></a>
+
+        <div class="card shadow-sm"> <a class="cardLink" href="#">
+          <img class="card-img-top" src="./imagens/salvadorCard.jpg" alt="Imagem de capa do card">
+          <div class="card-body">
+            <h5 class="card-title">Salvador - BA</h5>
+            <p class="card-text text-lg-left">8.7 <span class="estrelasCard"> &#9733; &#9733; &#9733; &#9733;</span></p>
+            <p class="card-text">Saindo da sua cidade <br> Hotel + Aéreo</p>
+            <p class="card-text small">Oferta imbatível</p> <hr>
+            <p class="card-text small"> <s> R$ 1.190,00 </s></p>
+            <p class="card-text"> <strong> R$ 970,00 </strong></p>
+          </div>
+        </div></a>
+      </div>
+
+
+
+      <div class="card-deck">
+        <h3 class="tituloPromocoes text-white">Pacotes <br> Inter-<br> nacionais</h3>
+        <div class="card shadow-sm"> <a class="cardLink" href="#">
+          <img class="card-img-top" src="./imagens/paristorreCard.jpg" alt="Imagem de capa do card">
+          <div class="card-body">
+            <h5 class="card-title">Paris - França</h5>
+            <p class="card-text text-lg-left">9.2 <span class="estrelasCard"> &#9733; &#9733; &#9733; &#9733; &#9733; </span></p>
+            <p class="card-text">Saindo da sua cidade <br> Hotel + Aéreo</p>
+            <p class="card-text small">Oferta imbatível</p> <hr>
+            <p class="card-text small"> <s> R$ 3.290,00 </s></p>
+            <p class="card-text"> <strong> R$ 1.990,00 </strong></p>
+          </div>
+        </div></a>
+
+        <div class="card shadow-sm"> <a class="cardLink" href="#">
+          <img class="card-img-top" src="./imagens/londresCard.jpg" alt="Imagem de capa do card">
+          <div class="card-body">
+            <h5 class="card-title">Londres - UK</h5>
+            <p class="card-text text-lg-left">8.4 <span class="estrelasCard"> &#9733; &#9733; &#9733; &#9733; </span></p>
+            <p class="card-text">Saindo da sua cidade <br> Hotel + Aéreo</p>
+            <p class="card-text small">Oferta imbatível</p> <hr>
+            <p class="card-text small"> <s> R$ 2.890,00 </s></p>
+            <p class="card-text"> <strong> R$ 1.890,00 </strong></p>
+          </div>
+        </div></a>
+
+        <div class="card shadow-sm"> <a class="cardLink" href="#">
+          <img class="card-img-top" src="./imagens/vegasCard.jpg" alt="Imagem de capa do card">
+          <div class="card-body">
+            <h5 class="card-title">Las Vegas - USA</h5>
+            <p class="card-text text-lg-left">8.9 <span class="estrelasCard"> &#9733; &#9733; &#9733; &#9733;</span></p>
+            <p class="card-text">Saindo da sua cidade <br> Hotel + Aéreo</p>
+            <p class="card-text small">Oferta imbatível</p> <hr>
+            <p class="card-text small"> <s> R$ 2.490,00 </s></p>
+            <p class="card-text"> <strong> R$ 1.940,00 </strong></p>
+          </div>
+        </div></a>
+
+        <div class="card shadow-sm"> <a class="cardLink" href="#">
+          <img class="card-img-top" src="./imagens/venezaCard.jpg" alt="Imagem de capa do card">
+          <div class="card-body">
+            <h5 class="card-title">Veneza - Itália</h5>
+            <p class="card-text text-lg-left">9.7 <span class="estrelasCard"> &#9733; &#9733; &#9733; &#9733; &#9733; </span></p>
+            <p class="card-text">Saindo da sua cidade <br> Hotel + Aéreo</p>
+            <p class="card-text small">Oferta imbatível</p> <hr>
+            <p class="card-text small"> <s> R$ 2.190,00 </s></p>
+            <p class="card-text"> <strong> R$ 1.570,00 </strong></p>
+          </div>
+        </div></a>
+      </div>
+
+
+
+
+
+      <div class="rodape p-4 pb-0">
+        <footer class= "text-center text-white">
+
+          <section id="informacoesRodape" class="pt-4 pb-4">
+            <!-- Facebook -->
+            <a class="btn btn-outline-light btn-floating m-1 rounded-circle shadow" href="#!" role="button"
+              ><i class="bi bi-facebook"></i>
+            </a>
+    
+            <!-- Twitter -->
+            <a class="btn btn-outline-light btn-floating m-1 rounded-circle shadow" href="#!" role="button"
+              ><i class="bi bi-twitter"></i>
+            </a>
+      
+            <!-- Instagram -->
+            <a class="btn btn-outline-light btn-floating m-1 rounded-circle shadow" href="#!" role="button"
+              ><i class="bi bi-instagram"></i>
+            </a>
+      
+            <!-- Email -->
+            <a class="btn btn-outline-light btn-floating m-1 rounded-circle shadow" href="#!" role="button"
+              ><i class="bi bi-envelope"></i>
+            </a>
+            
+            <form class="form-inline float-left">
+              <p class="my-sm-0 pl-4 pr-3" style="text-shadow: 0px 4px 7px #c05e1d;">
+                Inscreva-se para receber <br> nossas promoções!
+              </p>
+              <input class="form-control mr-sm-2" type="email" placeholder="Email" aria-label="Enviar">
+              <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Enviar</button>
+            </form>
+
+          </section>
+
+          
+            
+          <section class="p-3" style="background-color: #d8991d;">
+              © 2022 Copyright:
+              <a class="text-white" href="https://mdbootstrap.com/">Sunsetur.com</a>
+          </section>
+
+        </footer>
+      </div>
+
+
+    </main>
+  </body>
+</html>
